@@ -4,6 +4,14 @@ function sumarArray(arrayOfNumbers, cb) {
   // Este resultado debes pasárselo como argumento al callback recibido.
   // NOTA: no debes retOrnar nada.
   // Tu código:
+
+  let respuesta = 0;
+
+  for (let suma of arrayOfNumbers) {
+    respuesta = respuesta + suma;    
+  };
+
+  cb(respuesta);
 }
 
 module.exports = sumarArray;
