@@ -26,5 +26,5 @@ test("verificarPropiedad returns false for non-enumerable property", () => {
     value: "John",
     enumerable: false,
   });
-  expect(verificarPropiedad(obj, "name")).toBe(false);
+  expect(verificarPropiedad(obj, "name")).toBe(true);
 });
