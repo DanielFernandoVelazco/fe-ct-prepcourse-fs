@@ -55,6 +55,14 @@ function capToFront(string) {
   // Retornar el string.
   // [EJEMPLO]: soyHENRY ---> HENRYsoy
   // Tu código:
+
+  let regExpMay = /[A-Z]/g;
+  let Mayuscula = string.match(regExpMay).join('');
+
+  let regExpMin = /[a-z]/g;
+  let minuscula = string.match(regExpMin).join('');
+
+  return (Mayuscula+minuscula);
 }
 
 function asAmirror(frase) {
