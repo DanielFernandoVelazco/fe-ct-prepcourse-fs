@@ -108,6 +108,16 @@ function sortArray(arrayOfStrings) {
   // de la longitud de cada string.
   // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
   // Tu código:
+
+  let objeto = {};
+  let nuevoarray = [];
+
+  for (let i=0; i<arrayOfStrings.length; i++) {
+    nuevoarray.push(arrayOfStrings[i].length * 1000 + i);
+    objeto[nuevoarray[i]] = arrayOfStrings[i];
+  };
+
+  return (Object.values(objeto));
 }
 
 function buscoInterseccion(array1, array2) {
