@@ -127,6 +127,15 @@ function buscoInterseccion(array1, array2) {
   // Si no tienen elementos en común, retornar un arreglo vacío.
   // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
   // Tu código:
+
+  arrayTotal = [];
+
+  for (let i of array1) {
+    let repetido = array2.includes(i);
+    if(repetido) arrayTotal.push(i);
+  };
+
+  return (arrayTotal)
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
